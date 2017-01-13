@@ -24,17 +24,19 @@ public class LauncherActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
-        toggle.syncState();
+		if (false) {
+	        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+	        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+	                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+	        drawer.setDrawerListener(toggle);
+	        toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+	        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+	        navigationView.setNavigationItemSelectedListener(this);
 
-        View offerContainer = findViewById(R.id.container_offer);
-        offerContainer.setOnClickListener(this);
+	        View offerContainer = findViewById(R.id.container_offer);
+	        offerContainer.setOnClickListener(this);
+		}
     }
 
     @Override
