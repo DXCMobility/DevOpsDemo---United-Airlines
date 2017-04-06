@@ -27,6 +27,7 @@ public class LauncherActivityTest {
         launcherActivity = new LauncherActivity();
         controller = ActivityController.of(Robolectric.getShadowsAdapter(), launcherActivity);
         controller.setup();
+        // Testing
     }
 
     @Test
